@@ -1,0 +1,47 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: Riiid
+providerId: riiid
+created: '2026-06-21'
+modified: '2026-06-21'
+reconciled: false
+tags:
+- AI
+- Education
+- Adaptive Learning
+- Knowledge Tracing
+- EdTech
+- Rate Limiting
+- Quotas
+- Throttling
+description: >-
+  Riiid (Socra AI) does not publish a public, self-serve developer API, and
+  therefore publishes no public rate-limit, quota, or throttling policy. Any
+  request limits that apply to partner / R.Inside integrations are defined
+  privately within individual B2B contracts and are not documented publicly.
+notes: >-
+  No public rate-limit documentation exists. Partner integration limits, if any,
+  are governed by contract terms negotiated via partnership@socra.ai. Reconciled
+  is false because there is no public API to measure.
+sources:
+- https://www.riiid.com
+- https://corp.socra.ai/
+responseCodes: {}
+limits:
+- name: Public API Rate Limits
+  scope: account
+  metric: requests
+  limit: not applicable - no public API
+  notes: Riiid does not expose a documented public self-serve API; no public rate limits are published.
+- name: Partner Integration Limits
+  scope: contract
+  metric: requests
+  limit: see partner contract
+  notes: Any limits on B2B / R.Inside integrations are defined privately per partner agreement.
+policies:
+- name: Contract-Governed Access
+  description: Access and any usage limits are negotiated and enforced through B2B partner contracts rather than a public rate-limit policy.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

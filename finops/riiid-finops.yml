@@ -1,0 +1,84 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: Riiid
+providerId: riiid
+created: '2026-06-21'
+modified: '2026-06-21'
+reconciled: false
+tags:
+- AI
+- Education
+- Adaptive Learning
+- Knowledge Tracing
+- EdTech
+- FinOps
+- Cost Management
+- FOCUS
+description: >-
+  FinOps view of Riiid (Socra AI) spend. Riiid does not offer a public,
+  usage-metered developer API, so there are no per-request or per-token public
+  meters to manage. Cost exposure falls into two non-API categories: consumer
+  Santa app subscriptions (billed through the Apple App Store / Google Play) and
+  sales-led B2B / R.Inside (AIaaS) partner contracts (negotiated flat or
+  commitment-based fees). Meters below are descriptive placeholders, not
+  reconciled public billing dimensions.
+notes: >-
+  No public API billing data exists. Consumer subscription costs are managed in
+  the mobile app stores; partner costs are governed by private contracts via
+  partnership@socra.ai. Reconciled is false.
+sources:
+- https://www.riiid.com
+- https://corp.socra.ai/
+- https://focus.finops.org/focus-specification/v1-3/
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+publisherName: Riiid
+serviceCategory: AI and Machine Learning
+billingModel:
+  pricingCategory: Subscription and Contract
+  billingFrequency: Monthly
+  billingCurrency: USD
+  chargeCategories:
+  - Usage
+  - Purchase
+focusColumns:
+  ServiceName: Riiid (Socra AI)
+  ServiceCategory: AI and Machine Learning
+  ProviderName: Riiid
+  PublisherName: Riiid
+  InvoiceIssuerName: Riiid (Socra AI)
+  BillingCurrency: USD
+  ChargeCategory: Purchase
+  PricingCategory: Subscription and Contract
+meters:
+- name: santa_subscription
+  description: Consumer Santa app subscription billed through the mobile app stores; varies by region and plan.
+  unit: subscription
+  aggregation: count
+  dimensions:
+  - account
+  - region
+  - plan
+- name: partner_contract
+  description: B2B / R.Inside (AIaaS) partner agreement billed under negotiated, contract-based terms. Not public.
+  unit: contract
+  aggregation: count
+  dimensions:
+  - partner
+principles:
+- name: Visibility
+  description: No public API usage exports exist; track Santa subscription receipts via the app stores and partner invoices via contract reporting.
+- name: Allocation
+  description: Allocate consumer subscription and partner-contract costs to the owning team or program rather than per-API-key usage.
+- name: Optimization
+  description: Optimize at the contract level (commitment terms, seat counts) since there is no usage-metered public API to tune.
+- name: Accountability
+  description: Assign an owner for each partner contract and review negotiated terms against budget periodically.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

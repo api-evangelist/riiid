@@ -1,0 +1,112 @@
+aid: riiid
+url: https://raw.githubusercontent.com/api-evangelist/riiid/refs/heads/main/apis.yml
+name: Riiid
+kind: company
+description: Riiid (now operating as Socra AI) is an AI education technology company
+  whose proprietary deep-knowledge-tracing and score-prediction models power adaptive
+  learning. Its consumer product Santa (AI TOEIC / TOEFL test prep) and its R.Inside
+  AI-as-a-Service offering bring real-time student modeling to partners. Riiid does
+  not publish a public, self-serve developer API; its AI is delivered through B2B
+  partner integrations and packaged products.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- AI
+- Education
+- Adaptive Learning
+- Knowledge Tracing
+- EdTech
+created: '2026-06-21'
+modified: '2026-06-21'
+specificationVersion: '0.19'
+apis:
+- aid: riiid:adaptive-learning
+  name: Riiid Adaptive Learning
+  tags:
+  - Adaptive Learning
+  - Personalization
+  - Recommendation
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://corp.socra.ai/
+  properties:
+  - url: https://corp.socra.ai/
+    type: Documentation
+  - url: openapi/riiid-openapi.yml
+    type: OpenAPI
+  description: Riiid's adaptive learning engine analyzes learner interaction data in
+    real time to recommend personalized study paths and content. It is delivered
+    inside Riiid/Socra products (Santa) and to partners via integration, not as a
+    documented public self-serve API.
+- aid: riiid:knowledge-tracing
+  name: Riiid Knowledge Tracing
+  tags:
+  - Knowledge Tracing
+  - Score Prediction
+  - Deep Learning
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://corp.socra.ai/
+  properties:
+  - url: https://corp.socra.ai/
+    type: Documentation
+  - url: https://github.com/riiid/ednet
+    type: SourceCode
+  - url: openapi/riiid-openapi.yml
+    type: OpenAPI
+  description: Proprietary deep knowledge tracing and score-prediction models (built
+    on 100M+ student interactions, the EdNet dataset) estimate a learner's mastery
+    and predict test outcomes in real time. Exposed through Riiid products and partner
+    solutions; no public API endpoint is documented.
+- aid: riiid:santa
+  name: Riiid Santa
+  tags:
+  - Santa
+  - Test Prep
+  - TOEIC
+  - TOEFL
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://apps.apple.com/us/app/santa-ai-toeic/id1148006701
+  properties:
+  - url: https://corp.socra.ai/
+    type: Documentation
+  - url: https://apps.apple.com/us/app/santa-ai-toeic/id1148006701
+    type: SignUp
+  - url: openapi/riiid-openapi.yml
+    type: OpenAPI
+  description: Santa is Riiid's consumer AI tutor app for standardized English tests
+    (TOEIC, and TOEFL via an ETS content partnership). It is distributed as iOS /
+    Android mobile applications with no documented public developer API.
+- aid: riiid:partner-solutions
+  name: Riiid Partner Solutions
+  tags:
+  - Partner Solutions
+  - AIaaS
+  - B2B
+  - R.Inside
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://corp.socra.ai/
+  properties:
+  - url: https://corp.socra.ai/
+    type: Documentation
+  - url: openapi/riiid-openapi.yml
+    type: OpenAPI
+  description: B2B / AI-as-a-Service (R.Inside) engagements that embed Riiid's adaptive
+    learning and knowledge-tracing AI into partner education platforms. Access is
+    sales-led and contract-based via partnership@socra.ai; no public self-serve API
+    is published.
+common:
+- type: GitHubOrganization
+  url: https://github.com/riiid
+- type: LinkedIn
+  url: https://www.linkedin.com/company/riiid
+- type: Website
+  url: https://www.riiid.com
+- type: Documentation
+  url: https://corp.socra.ai/
+- type: Plans
+  url: plans/riiid-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/riiid-rate-limits.yml
+- type: FinOps
+  url: finops/riiid-finops.yml
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

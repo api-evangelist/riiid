@@ -1,0 +1,31 @@
+openapi: 3.0.1
+info:
+  title: Riiid API
+  description: >-
+    Riiid (now operating as Socra AI) is an AI education technology company whose
+    deep-knowledge-tracing and score-prediction models power adaptive learning in
+    products such as the Santa AI test-prep app and in partner integrations
+    (R.Inside AI-as-a-Service).
+
+
+    As of this writing, Riiid does NOT publish a public, self-serve developer API
+    with documented endpoints, authentication, or an interactive reference. Its AI
+    capabilities are delivered through packaged consumer products (mobile apps) and
+    through sales-led B2B / partner integrations governed by contract. Because no
+    public API surface is documented, this OpenAPI definition intentionally contains
+    no paths. It exists as a placeholder within the API Evangelist catalog and will
+    be populated if and when Riiid / Socra AI publishes a documented public API.
+
+
+    Partner and integration inquiries: partnership@socra.ai
+  termsOfService: https://www.riiid.com
+  contact:
+    name: Riiid (Socra AI) Partnerships
+    email: partnership@socra.ai
+  version: '1.0'
+servers:
+  - url: https://www.riiid.com
+    description: >-
+      Corporate / product site. No public API base URL is documented; this server
+      entry is a placeholder and does not host a self-serve API.
+paths: {}

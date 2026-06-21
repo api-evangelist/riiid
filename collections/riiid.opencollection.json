@@ -1,0 +1,10 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Riiid API",
+    "version": "1.0",
+    "description": "Riiid (Socra AI) does not publish a public, self-serve developer API. This collection is an intentionally empty placeholder within the API Evangelist catalog; Riiid's AI is delivered through packaged products (the Santa app) and sales-led B2B / R.Inside partner integrations. Partner inquiries: partnership@socra.ai"
+  },
+  "items": [],
+  "bundled": true
+}

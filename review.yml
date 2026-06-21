@@ -1,0 +1,85 @@
+aid: riiid
+name: Riiid
+review:
+  question: Does Riiid expose a documented public, self-serve developer API?
+  answer: false
+  date: '2026-06-21'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was created. Riiid publishes no documented public
+    HTTP, SSE, or WebSocket API surface, so there is no event-driven or
+    streaming interface to model.
+findings:
+  summary: |
+    Riiid (legally Riiid, Inc.; rebranded to Socra AI effective 2026-06-21
+    reporting as "Socra AI" since 2025-09-01) is an AI education technology
+    company. Its proprietary deep-knowledge-tracing and score-prediction
+    models power adaptive learning, but they are delivered through packaged
+    products and partner integrations - NOT through a public, self-serve
+    developer API.
+
+    Primary surfaces:
+      - Santa: consumer AI test-prep mobile app (TOEIC, and TOEFL via an ETS
+        content partnership), distributed on the Apple App Store and Google
+        Play. No public developer API.
+      - R.Inside / Partner Solutions: B2B AI-as-a-Service integrations that
+        embed Riiid's adaptive-learning and knowledge-tracing AI into partner
+        platforms. Sales-led and contract-based (partnership@socra.ai). No
+        public self-serve API portal, no published endpoints, no public
+        authentication or interactive API reference.
+      - EdNet: an open research dataset of 100M+ student interactions
+        published on GitHub (github.com/riiid/ednet). This is a dataset and
+        research artifact, not an API.
+
+    The corporate site www.riiid.com 301-redirects to corp.socra.ai. The
+    GitHub organization remains github.com/riiid (49 repositories, mostly
+    open-source tooling, forks, and the EdNet dataset; no public product API
+    SDK is published).
+
+    Because no public API surface is documented, the OpenAPI definition at
+    openapi/riiid-openapi.yml intentionally uses paths: {} with an accurate
+    description, and the Postman / Open Collection files contain no request
+    items. Plans, rate-limits, and finops artifacts are marked reconciled:
+    false and document the consumer-subscription + sales-led B2B reality
+    honestly.
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No public REST API base URL or endpoints are documented by Riiid / Socra AI.
+    - protocol: SSE
+      scheme: https
+      documented: false
+      note: No Server-Sent Events streaming interface is documented.
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket endpoint is documented.
+  endpointsConfirmedRest: []
+sources:
+  - url: https://www.riiid.com
+    type: Website
+    note: Corporate site; 301-redirects to corp.socra.ai. No developer/API section.
+  - url: https://corp.socra.ai/
+    type: Website
+    note: Current corporate site (Socra AI). Navigation covers Our Story, Our Products, Partnerships, Join Us. Partnership contact partnership@socra.ai. No API documentation or self-serve developer portal.
+  - url: https://github.com/riiid
+    type: GitHubOrganization
+    note: Real org (operating as Socra AI), 49 repos including the EdNet dataset and open-source tooling; no public product API SDK.
+  - url: https://github.com/riiid/ednet
+    type: SourceCode
+    note: Open research dataset of 100M+ student interactions; a dataset, not an API.
+  - url: https://apps.apple.com/us/app/santa-ai-toeic/id1148006701
+    type: SignUp
+    note: Santa consumer test-prep app (TOEIC); distributed via app stores, no developer API.
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    No public, self-serve API exists. The catalog documents Riiid's real
+    product and partner-solution surfaces honestly: OpenAPI uses paths: {}
+    with an accurate no-public-API description; collections are empty of
+    request items; plans/rate-limits/finops are reconciled: false and reflect
+    consumer-subscription and sales-led B2B monetization. The repo will be
+    updated if Riiid / Socra AI ever publishes a documented public API.

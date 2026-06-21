@@ -1,0 +1,20 @@
+{
+  "item": [],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://www.riiid.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "b1f4c2a7-3d6e-4a8b-9c10-7e2f5a9d4c01",
+    "name": "Riiid API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Riiid (Socra AI) does not publish a public, self-serve developer API. This collection is an intentionally empty placeholder within the API Evangelist catalog; Riiid's AI is delivered through packaged products (the Santa app) and sales-led B2B / R.Inside partner integrations. Partner inquiries: partnership@socra.ai",
+      "type": "text/plain"
+    }
+  }
+}

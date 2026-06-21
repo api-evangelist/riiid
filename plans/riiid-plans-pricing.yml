@@ -1,0 +1,79 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Riiid
+providerId: riiid
+created: '2026-06-21'
+modified: '2026-06-21'
+reconciled: false
+tags:
+- AI
+- Education
+- Adaptive Learning
+- Knowledge Tracing
+- EdTech
+- Plans
+description: >-
+  Riiid (Socra AI) does not publish public, self-serve API pricing. Its
+  monetization is split between consumer subscriptions for the Santa test-prep
+  app (in-app purchase / subscription on the Apple App Store and Google Play,
+  with pricing that varies by region, plan length, and promotion) and sales-led
+  B2B / AI-as-a-Service (R.Inside) partner agreements that are negotiated under
+  contract. No usage-metered API tiers are published, so plan entries below are
+  descriptive placeholders rather than reconciled rates.
+notes: >-
+  Consumer Santa pricing is set in the mobile app stores and changes by market;
+  partner / AIaaS pricing is not public and is obtained via partnership@socra.ai.
+  Reconciled is false because no documented public API pricing exists.
+sources:
+- https://www.riiid.com
+- https://corp.socra.ai/
+- https://apps.apple.com/us/app/santa-ai-toeic/id1148006701
+plans:
+- id: riiid-santa-consumer
+  name: Santa (Consumer App)
+  type: subscription
+  description: >-
+    Consumer AI test-prep app (TOEIC / TOEFL) sold via the Apple App Store and
+    Google Play as in-app subscriptions. Pricing varies by region and plan.
+  entries:
+  - label: Santa Subscription
+    name: santa_subscription
+    type: subscription
+    metric: subscription
+    limit: -1
+    timeFrame: month
+    geo: global
+    unit: 1
+    price: see app store listing (varies by region/plan)
+    userMultiplied: false
+  elements:
+  - name: AI TOEIC Test Prep
+  - name: AI TOEFL Test Prep
+  - name: Score Prediction
+  - name: Personalized Study Plan
+- id: riiid-partner-solutions
+  name: Partner Solutions / R.Inside (AIaaS)
+  type: enterprise
+  description: >-
+    Sales-led B2B integration of Riiid's adaptive-learning and knowledge-tracing
+    AI into partner platforms. Negotiated, contract-based pricing; not public.
+  entries:
+  - label: Partner Agreement
+    name: partner_agreement
+    type: flat
+    metric: contract
+    limit: -1
+    timeFrame: year
+    geo: global
+    unit: 1
+    price: contact partnerships (partnership@socra.ai)
+    userMultiplied: false
+  elements:
+  - name: R.Inside AIaaS
+  - name: Adaptive Learning Integration
+  - name: Knowledge Tracing Integration
+  - name: Custom Education Solutions
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
