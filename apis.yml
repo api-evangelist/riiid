@@ -68,7 +68,7 @@ apis:
   - url: https://corp.socra.ai/
     type: Documentation
   - url: https://apps.apple.com/us/app/santa-ai-toeic/id1148006701
-    type: SignUp
+    type: Signup
   - url: openapi/riiid-openapi.yml
     type: OpenAPI
   description: Santa is Riiid's consumer AI tutor app for standardized English tests
