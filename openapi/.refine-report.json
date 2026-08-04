@@ -1,0 +1,14 @@
+{
+  "provider": "riiid",
+  "sources": [
+    "riiid-openapi.yml"
+  ],
+  "outputs": [],
+  "archived": [
+    "archived riiid-openapi.yml"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
