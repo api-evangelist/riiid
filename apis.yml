@@ -42,7 +42,7 @@ apis:
   properties:
   - url: https://corp.socra.ai/
     type: Documentation
-  - url: openapi/riiid-openapi.yml
+  - url: openapi/_original/riiid-openapi.yml
     type: OpenAPI
   description: Riiid's adaptive learning engine analyzes learner interaction data in
     real time to recommend personalized study paths and content. It is delivered
@@ -61,7 +61,7 @@ apis:
     type: Documentation
   - url: https://github.com/riiid/ednet
     type: SourceCode
-  - url: openapi/riiid-openapi.yml
+  - url: openapi/_original/riiid-openapi.yml
     type: OpenAPI
   description: Proprietary deep knowledge tracing and score-prediction models (built
     on 100M+ student interactions, the EdNet dataset) estimate a learner's mastery
@@ -81,7 +81,7 @@ apis:
     type: Documentation
   - url: https://apps.apple.com/us/app/santa-ai-toeic/id1148006701
     type: Signup
-  - url: openapi/riiid-openapi.yml
+  - url: openapi/_original/riiid-openapi.yml
     type: OpenAPI
   description: Santa is Riiid's consumer AI tutor app for standardized English tests
     (TOEIC, and TOEFL via an ETS content partnership). It is distributed as iOS /
@@ -98,7 +98,7 @@ apis:
   properties:
   - url: https://corp.socra.ai/
     type: Documentation
-  - url: openapi/riiid-openapi.yml
+  - url: openapi/_original/riiid-openapi.yml
     type: OpenAPI
   description: B2B / AI-as-a-Service (R.Inside) engagements that embed Riiid's adaptive
     learning and knowledge-tracing AI into partner education platforms. Access is
