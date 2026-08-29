@@ -1,5 +1,7 @@
 aid: riiid
 url: https://raw.githubusercontent.com/api-evangelist/riiid/refs/heads/main/apis.yml
+x-api-posture: partner-gated
+x-api-posture-basis: observed
 name: Riiid
 kind: company
 description: Riiid (now operating as Socra AI) is an AI education technology company
