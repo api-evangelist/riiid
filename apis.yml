@@ -8,6 +8,18 @@ description: Riiid (now operating as Socra AI) is an AI education technology com
   AI-as-a-Service offering bring real-time student modeling to partners. Riiid does
   not publish a public, self-serve developer API; its AI is delivered through B2B
   partner integrations and packaged products.
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: true
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - pricing
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
