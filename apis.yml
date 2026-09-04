@@ -32,6 +32,7 @@ accessModel:
   confidence: low
   source:
   - plans
+  - {url: 'https://www.riiid.com', status: 301, note: 'declared website redirects to https://corp.socra.ai/ — a different registrable domain (riiid.com -> socra.ai), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
   generated: '2026-07-22'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/riiid.png
