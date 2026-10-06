@@ -52,7 +52,7 @@ tags_raw:
 - Knowledge Tracing
 - EdTech
 created: '2026-06-21'
-modified: '2026-06-21'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis:
 - aid: riiid:adaptive-learning
@@ -133,6 +133,8 @@ apis:
     sales-led and contract-based via partnership@socra.ai; no public self-serve API
     is published.
 common:
+- url: https://corp.socra.ai/stories
+  type: Blog
 - type: DomainSecurity
   url: security/riiid-domain-security.yml
 - type: GitHubOrganization
